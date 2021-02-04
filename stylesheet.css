@@ -1,0 +1,81 @@
+body
+{
+  margin: 0px;
+}
+button
+{
+  font-size: 20px;
+  width: 300px;
+  height: 120px;
+}
+.display
+{
+  border: solid white;
+  display: grid;
+  grid-template: repeat(1,100px)/repeat(1,1fr);
+  text-align: right;
+  background-color: grey;
+  color: ivory;
+  font-size: 3rem;
+}
+.t-number
+{
+  margin-top: 50px;
+  font-size: 3rem;
+}
+.container
+{
+  display: grid;
+  grid-template: repeat(5,120px)/repeat(5,1fr);
+  text-align: center;
+  background-color: white;
+}
+.symbol,.number
+{
+  border: solid white;
+  color: ivory;
+  background-color: black;
+  width: 300px;
+  height: 120px;
+}
+.number,.number1
+{
+  background-color:grey;
+  color:ivory;
+}
+.number1
+{
+  border:grey;
+  transition-duration: 0.4s;
+}
+.number1:active
+{
+  background-color: #696969;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.number1:hover{
+  background-color: #414a4c;
+}
+.operator
+{
+  color:ivory;
+  background-color: #0e1111;
+  border: white;
+}
+.operator:active {
+  background-color: #0e1111;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.operator:hover
+{
+  background-color: #232b2b;
+}
+
+
+.pressed {
+  /* box-shadow: 0 3px 4px 0 #DBEDF3; */
+  opacity: 0.3;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
+}
